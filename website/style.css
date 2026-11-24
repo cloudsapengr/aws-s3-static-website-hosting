@@ -1,0 +1,342 @@
+
+/* =================================
+   GLOBAL STYLES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =================================
+   NAVIGATION
+================================= */
+
+header {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.project-number {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    color: #dbeafe;
+}
+
+
+/* =================================
+   BUTTON
+================================= */
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   GENERAL SECTIONS
+================================= */
+
+.section {
+    padding: 75px 0;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+.section-description {
+    margin-bottom: 30px;
+}
+
+.dark-section {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.dark-section h2 {
+    color: #ffffff;
+}
+
+
+/* =================================
+   AWS CERTIFICATION
+================================= */
+
+.certification-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-left: 5px solid #60a5fa;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 750px;
+}
+
+.certification-card h3 {
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.certification-card p {
+    color: #cbd5e1;
+    margin-bottom: 10px;
+}
+
+.certification-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #60a5fa;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.certification-card a:hover {
+    color: #93c5fd;
+}
+
+
+/* =================================
+   AWS PROJECTS
+================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.project-card h3 {
+    color: #0f172a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    color: #2563eb;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #1d4ed8;
+}
+
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+#contact p {
+    color: #cbd5e1;
+    margin-bottom: 12px;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #60a5fa;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #93c5fd;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .certification-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
